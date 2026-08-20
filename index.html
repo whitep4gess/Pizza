@@ -1,0 +1,297 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="FORNO — współczesna pizzeria neapolitańska. Ciasto dojrzewające 48 godzin, włoskie składniki i ogień z pieca opalanego drewnem.">
+  <meta name="theme-color" content="#15130f">
+  <title>FORNO — pizza, ogień, Neapol</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Przejdź do treści</a>
+
+  <div class="topbar">
+    <div class="shell topbar__inner">
+      <p>Pizza z pieca opalanego drewnem <span>•</span> Śr–Nd, 12:00–23:00</p>
+      <a href="#kontakt">Przykładowy adres <span aria-hidden="true">↗</span></a>
+    </div>
+  </div>
+
+  <header class="site-header" id="start">
+    <div class="shell nav-wrap">
+      <a class="brand" href="#start" aria-label="FORNO — strona główna">
+        <span class="brand__mark" aria-hidden="true"><i></i><i></i><i></i></span>
+        <span>FORNO</span>
+      </a>
+
+      <nav class="desktop-nav" aria-label="Nawigacja główna">
+        <a href="#menu">Menu</a>
+        <a href="#historia">Nasza historia</a>
+        <a href="#lokal">Lokal</a>
+        <a href="#kontakt">Kontakt</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="text-action reservation-trigger" type="button">Rezerwacja</button>
+        <button class="cart-button" type="button" aria-label="Otwórz koszyk">
+          <span>Zamów online</span>
+          <span class="cart-count" aria-live="polite">0</span>
+        </button>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-menu" aria-label="Otwórz menu">
+          <span></span><span></span>
+        </button>
+      </div>
+    </div>
+
+    <nav class="mobile-menu" id="mobile-menu" aria-label="Nawigacja mobilna">
+      <a href="#menu">Menu</a>
+      <a href="#historia">Nasza historia</a>
+      <a href="#lokal">Lokal</a>
+      <a href="#kontakt">Kontakt</a>
+      <button class="reservation-trigger" type="button">Zarezerwuj stolik</button>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero__image" role="img" aria-label="Pizza neapolitańska przed piecem opalanym drewnem"></div>
+      <div class="hero__veil"></div>
+      <div class="shell hero__content">
+        <p class="eyebrow eyebrow--light"><span></span> Pizzeria / Est. 2019</p>
+        <h1 id="hero-title">Ogień. Ciasto.<br><em>Neapol.</em></h1>
+        <p class="hero__lead">Pizza bez kompromisów — lekka, sprężysta i wypiekana w 450°C. Proste składniki, wielki smak.</p>
+        <div class="hero__actions">
+          <a class="button button--accent" href="#menu">Zobacz menu <span aria-hidden="true">↗</span></a>
+          <button class="button button--ghost reservation-trigger" type="button">Zarezerwuj stolik</button>
+        </div>
+      </div>
+      <div class="shell hero__footer">
+        <p><strong>Dziś jesteśmy otwarci</strong><span>12:00–23:00</span></p>
+        <a href="#menu">Przewiń, żeby odkryć <span aria-hidden="true">↓</span></a>
+      </div>
+    </section>
+
+    <section class="manifesto section">
+      <div class="shell manifesto__grid">
+        <p class="eyebrow"><span></span> W FORNO wierzymy</p>
+        <div>
+          <h2>Najlepsza pizza zaczyna się <em>na długo</em> przed włożeniem jej do pieca.</h2>
+          <p>Nasze ciasto dojrzewa 48 godzin. Używamy włoskiej mąki typu „00”, pomidorów San Marzano i świeżego fior di latte. Resztę robi ogień.</p>
+        </div>
+      </div>
+      <div class="shell facts" aria-label="Najważniejsze liczby">
+        <div><strong>48h</strong><span>dojrzewania ciasta</span></div>
+        <div><strong>450°</strong><span>temperatura pieca</span></div>
+        <div><strong>90s</strong><span>idealny wypiek</span></div>
+        <div><strong>100%</strong><span>włoskiej tradycji</span></div>
+      </div>
+    </section>
+
+    <section class="menu-section section" id="menu" aria-labelledby="menu-title">
+      <div class="shell">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow"><span></span> Prosto z pieca</p>
+            <h2 id="menu-title">Nasze <em>pizze</em></h2>
+          </div>
+          <p>Krótka karta. Najlepsze składniki.<br>Każda pizza powstaje na Twoich oczach.</p>
+        </div>
+
+        <div class="menu-toolbar" role="group" aria-label="Filtruj menu">
+          <button class="filter-button is-active" type="button" data-filter="all">Wszystkie</button>
+          <button class="filter-button" type="button" data-filter="classic">Klasyki</button>
+          <button class="filter-button" type="button" data-filter="signature">Autorskie</button>
+          <button class="filter-button" type="button" data-filter="vege">Wege</button>
+        </div>
+
+        <div class="pizza-grid">
+          <article class="pizza-card" data-category="classic vege">
+            <div class="pizza-card__photo pizza-card__photo--1">
+              <span class="label">Bestseller</span>
+            </div>
+            <div class="pizza-card__body">
+              <div class="pizza-card__title"><h3>Margherita DOP</h3><strong>34 zł</strong></div>
+              <p>San Marzano DOP, fior di latte, Parmigiano Reggiano, bazylia, oliwa EVO</p>
+              <button class="add-button" type="button" data-name="Margherita DOP" data-price="34">Dodaj do zamówienia <span aria-hidden="true">+</span></button>
+            </div>
+          </article>
+
+          <article class="pizza-card" data-category="classic">
+            <div class="pizza-card__photo pizza-card__photo--2">
+              <span class="label label--hot">Pikantna</span>
+            </div>
+            <div class="pizza-card__body">
+              <div class="pizza-card__title"><h3>Diavola</h3><strong>43 zł</strong></div>
+              <p>San Marzano, fior di latte, spianata piccante, nduja, peperoncino, miód chili</p>
+              <button class="add-button" type="button" data-name="Diavola" data-price="43">Dodaj do zamówienia <span aria-hidden="true">+</span></button>
+            </div>
+          </article>
+
+          <article class="pizza-card" data-category="signature vege">
+            <div class="pizza-card__photo pizza-card__photo--3"></div>
+            <div class="pizza-card__body">
+              <div class="pizza-card__title"><h3>Pera & Gorgonzola</h3><strong>46 zł</strong></div>
+              <p>Fior di latte, gorgonzola dolce, gruszka, orzech włoski, tymianek, miód</p>
+              <button class="add-button" type="button" data-name="Pera & Gorgonzola" data-price="46">Dodaj do zamówienia <span aria-hidden="true">+</span></button>
+            </div>
+          </article>
+
+          <article class="pizza-card" data-category="signature vege">
+            <div class="pizza-card__photo pizza-card__photo--4">
+              <span class="label label--dark">Szef poleca</span>
+            </div>
+            <div class="pizza-card__body">
+              <div class="pizza-card__title"><h3>Tartufo</h3><strong>49 zł</strong></div>
+              <p>Krem truflowy, fior di latte, pieczarki, pecorino romano, czarna trufla</p>
+              <button class="add-button" type="button" data-name="Tartufo" data-price="49">Dodaj do zamówienia <span aria-hidden="true">+</span></button>
+            </div>
+          </article>
+        </div>
+
+        <div class="menu-bottom">
+          <p>Masz alergię? Powiedz nam — chętnie pomożemy wybrać odpowiednią pizzę.</p>
+          <a href="#kontakt">Zapytaj o menu grupowe <span aria-hidden="true">↗</span></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="story section" id="historia">
+      <div class="shell story__grid">
+        <div class="story__visual" aria-label="Pizze przygotowane według tradycyjnej receptury">
+          <div class="story__quote"><span>“</span><p>Nie poprawiamy Neapolu.<br>Po prostu go słuchamy.</p></div>
+        </div>
+        <div class="story__copy">
+          <p class="eyebrow eyebrow--light"><span></span> Nasza historia</p>
+          <h2>Zaczęło się od <em>jednego pieca</em> i obsesji na punkcie ciasta.</h2>
+          <p>Przez trzy lata uczyliśmy się w Neapolu, podglądając pizzaiolo, którzy swój fach znają od pokoleń. Wróciliśmy z przekonaniem, że dobra pizza nie potrzebuje sztuczek.</p>
+          <p>Każdego ranka wyrabiamy ciasto na miejscu. Każdy placek formujemy ręcznie. Każdy składnik znamy z imienia.</p>
+          <div class="signature">
+            <span>Marco & Jan</span>
+            <small>założyciele FORNO</small>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="craft section" id="lokal">
+      <div class="shell">
+        <div class="section-heading section-heading--center">
+          <div>
+            <p class="eyebrow"><span></span> Liczy się każdy detal</p>
+            <h2>Rzemiosło, które <em>czuć</em></h2>
+          </div>
+        </div>
+        <div class="craft-grid">
+          <article>
+            <span class="craft-icon" aria-hidden="true">01</span>
+            <h3>Naturalna fermentacja</h3>
+            <p>Minimalna ilość drożdży i 48 godzin czasu sprawiają, że ciasto jest lekkie, aromatyczne i chrupiące.</p>
+          </article>
+          <article>
+            <span class="craft-icon" aria-hidden="true">02</span>
+            <h3>Składniki z pochodzeniem</h3>
+            <p>Pomidor z Kampanii, oliwa z Apulii, sery od małych włoskich producentów. Bez przypadków.</p>
+          </article>
+          <article>
+            <span class="craft-icon" aria-hidden="true">03</span>
+            <h3>Piec opalany drewnem</h3>
+            <p>Sercem sali jest ręcznie budowany piec. 450°C nadaje pizzy charakterystyczny leopard pattern.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="reviews section" aria-labelledby="reviews-title">
+      <div class="shell reviews__inner">
+        <div class="reviews__score">
+          <span>4.9</span>
+          <div><p aria-label="5 na 5 gwiazdek">★★★★★</p><small>na podstawie 836 opinii</small></div>
+        </div>
+        <blockquote>
+          <p id="reviews-title">„Jedna z tych pizz, po których na chwilę przestajesz rozmawiać. Idealne ciasto, prosty skład i ten zapach pieca.”</p>
+          <footer>— Marta, Google Reviews</footer>
+        </blockquote>
+      </div>
+    </section>
+
+    <section class="visit section" id="kontakt">
+      <div class="shell visit__grid">
+        <div class="visit__copy">
+          <p class="eyebrow eyebrow--light"><span></span> Wpadnij do nas</p>
+          <h2>Twój stolik<br><em>już czeka.</em></h2>
+          <button class="button button--accent reservation-trigger" type="button">Zarezerwuj stolik <span aria-hidden="true">↗</span></button>
+        </div>
+        <div class="visit__details">
+          <div>
+            <span>Adres</span>
+            <p>Przykładowy adres</p>
+          </div>
+          <div>
+            <span>Godziny</span>
+            <p>Śr–Czw: 12:00–22:00<br>Pt–Nd: 12:00–23:00</p>
+            <small>Pon–Wt: odpoczywamy</small>
+          </div>
+          <div>
+            <span>Kontakt</span>
+            <p><a href="tel:+48123456789">+48 123 456 789</a><br><a href="mailto:ciao@forno.pl">ciao@forno.pl</a></p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="shell footer__top">
+      <a class="brand brand--footer" href="#start"><span class="brand__mark" aria-hidden="true"><i></i><i></i><i></i></span><span>FORNO</span></a>
+      <p>Pizza. Ogień. Ludzie.<br>W samym sercu miasta.</p>
+      <div class="footer__socials"><a href="#">Instagram ↗</a><a href="#">Facebook ↗</a><a href="#">TikTok ↗</a></div>
+    </div>
+    <div class="shell footer__bottom">
+      <p>© 2026 FORNO Pizzeria</p>
+      <div><a href="#">Polityka prywatności</a><a href="#">Regulamin</a></div>
+      <p>Made with fuoco <span aria-hidden="true">●</span></p>
+    </div>
+  </footer>
+
+  <div class="drawer-overlay" hidden></div>
+  <aside class="cart-drawer" aria-hidden="true" aria-labelledby="cart-title">
+    <div class="drawer__header">
+      <div><p>Twoje zamówienie</p><h2 id="cart-title">Koszyk</h2></div>
+      <button class="drawer-close" type="button" aria-label="Zamknij koszyk">×</button>
+    </div>
+    <div class="cart-items" aria-live="polite"></div>
+    <div class="drawer__footer">
+      <div class="cart-total"><span>Razem</span><strong>0 zł</strong></div>
+      <button class="button button--accent button--full checkout-button" type="button">Przejdź do zamówienia <span>→</span></button>
+      <small>Odbiór osobisty • zwykle 20–30 min</small>
+    </div>
+  </aside>
+
+  <dialog class="reservation-modal">
+    <button class="modal-close" type="button" aria-label="Zamknij formularz">×</button>
+    <div class="modal-intro">
+      <p class="eyebrow"><span></span> Rezerwacja</p>
+      <h2>Zarezerwuj <em>stolik</em></h2>
+      <p>Wybierz termin, a my zajmiemy się resztą.</p>
+    </div>
+    <form class="reservation-form">
+      <label>Imię i nazwisko<input name="name" type="text" placeholder="Np. Anna Kowalska" required></label>
+      <div class="form-row">
+        <label>Data<input name="date" type="date" required></label>
+        <label>Godzina<select name="time" required><option value="">Wybierz</option><option>17:00</option><option>18:30</option><option>20:00</option><option>21:30</option></select></label>
+      </div>
+      <label>Liczba osób<select name="guests" required><option>2 osoby</option><option>3 osoby</option><option>4 osoby</option><option>5 osób</option><option>6 osób</option></select></label>
+      <label>Telefon<input name="phone" type="tel" placeholder="+48 000 000 000" required></label>
+      <button class="button button--dark button--full" type="submit">Potwierdź rezerwację <span>→</span></button>
+    </form>
+    <div class="reservation-success" hidden>
+      <div aria-hidden="true">✓</div><h3>Stolik czeka!</h3><p>Potwierdzenie rezerwacji wyślemy SMS-em.</p>
+    </div>
+  </dialog>
+
+  <div class="toast" role="status" aria-live="polite"></div>
+  <script src="script.js"></script>
+</body>
+</html>
+
